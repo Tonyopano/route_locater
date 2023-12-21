@@ -1,12 +1,16 @@
 import React from "react";
 import { Autocomplete } from "@react-google-maps/api";
-import { AppBar, ToolBar, Typography, InputBase, Box } from "@material-ui/core";
+import { AppBar, Toolbar, Typography, InputBase, Box } from "@material-ui/core";
 import { Search } from "@material-ui/icons/Search";
 
+import useStyles from './styles';
+
 const Header = () => {
+  const classes = useStyles();
+
   return (
     <AppBar position="static">
-      <ToolBar className={classes.toolbar}>
+      <Toolbar className={classes.toolbar}>
         <Typography variant="h5" className={classes.title}>
           Route locater
         </Typography>
@@ -14,16 +18,16 @@ const Header = () => {
             <Typography variant="h6" className={classes.title}>
               Explore new routes
             </Typography>
-            <Autocomplete>
+            {/* <Autocomplete> */}
               <div className={classes.search}>
                 <div className={classes.searchIcon}>
                   <searchIcon />
                 </div>
                 <InputBase placeholder="Search..." classes={{ root: classes.inputRoot, input: classes.inputInput }} />
               </div>
-            </Autocomplete>
+            {/* </Autocomplete> */}
         </Box>
-      </ToolBar>
+      </Toolbar>
     </AppBar>
   );
 }
