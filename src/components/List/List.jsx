@@ -11,8 +11,14 @@ const List = () => {
   const places = [
     {name: 'Cool Place',},
     {name: 'Best Beer'},
-    {name: 'Best'}
-    {name: 'Best Places},
+    {name: 'Best steak'},
+    {name: 'Cool Place',},
+    {name: 'Best Beer'},
+    {name: 'Best steak'},
+    {name: 'Cool Place',},
+    {name: 'Best Beer'},
+    {name: 'Best steak'},
+
   ];
 
   return (
@@ -35,6 +41,13 @@ const List = () => {
           <MenuItem value={4.5}>Above 4.5</MenuItem>
         </select>
       </FormControl>
+      <Grid container spacing={3} className={"classes.list"}>
+        {places?.map((place, i) => (
+          <Grid item key={i} xs={12}>
+            <placeDetails place={place} />
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 }
