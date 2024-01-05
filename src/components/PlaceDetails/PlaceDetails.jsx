@@ -66,3 +66,5 @@ const PlaceDetails = ({ place, selected, refProp }) => {
     </Card>
   );
 };
+
+export default PlaceDetails;
