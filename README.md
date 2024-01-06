@@ -1,6 +1,6 @@
 # Route Advisor
 
-![Travel Advisor](https://drive.google.com/file/d/135vnnqntDQknkPQHLn-MePFFL4l-uJUo/view?usp=sharing)
+![Route Advisor](https://drive.google.com/file/d/135vnnqntDQknkPQHLn-MePFFL4l-uJUo/view?usp=sharing)
 
 ## Introduction
 
@@ -14,3 +14,5 @@ concepts used:
 - And most importantly fetching data from unlimited sources using RapidAPI
 
 Setup: run `npm i && npm start` to start the development server
+
+![Route Advisor](https://kingtrip-travel-discovery.netlify.app/)
